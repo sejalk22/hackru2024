@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+import urls
+from urls import urls  # Import the list of URLs from urls.py
 
+# Define the get_sublinks function
 def get_sublinks(url):
     try:
         # Send a request to the URL
@@ -15,7 +18,14 @@ def get_sublinks(url):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Usage
-url = "https://bloustein.rutgers.edu/"  # Replace with the website you are interested in
-sublinks = get_sublinks(url)
-print(sublinks)
+all_sublinks = []
+
+# Iterate over the list of URLs
+for url in urls:
+    # Get the sublinks for the current URL
+    sublinks = get_sublinks(url)
+    # Extend the master list with the sublinks from the current URL
+    all_sublinks.extend(sublinks)
+
+# Print the complete list of sublinks
+print("All Sublinks:", all_sublinks)
