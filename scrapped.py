@@ -50,7 +50,7 @@ def scrape_links_in_urls(urls):
                     content = scrape_link_content(absolute_url)
                     if content:
                         # Save the content to a file
-                        with open(f"Graduate School of Applied and Professional Psychology_{link_num}_content.txt", "w", encoding="utf-8") as file:
+                        with open(f"Bloustein_{link_num}_content.txt", "w", encoding="utf-8") as file:
                             file.write(content)
                         print(f"Content of link {link_num} in URL {url} saved to link_{link_num}_content.txt")
                     else:
@@ -61,8 +61,8 @@ def scrape_links_in_urls(urls):
 # URLs to scrape
 urls = [
  #"https://newbrunswick.rutgers.edu/academics/schools-colleges/school-of-arts-and-sciences",
-#" https://bloustein.rutgers.edu/",
-"https://gsapp.rutgers.edu/",
+" https://bloustein.rutgers.edu/",
+#"https://gsapp.rutgers.edu/",
 #"https://gse.rutgers.edu/",
 #"https://www.masongross.rutgers.edu/",
 #"https://www.business.rutgers.edu/","https://sas.rutgers.edu/",
