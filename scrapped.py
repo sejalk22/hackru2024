@@ -60,7 +60,7 @@ def scrape_links_in_urls(urls):
 
 # URLs to scrape
 urls = [
-   # "https://newbrunswick.rutgers.edu/academics/schools-colleges/school-of-arts-and-sciences",
+    "https://newbrunswick.rutgers.edu/academics/schools-colleges/school-of-arts-and-sciences",
 #" https://bloustein.rutgers.edu/","https://gsapp.rutgers.edu/",
 #"https://gse.rutgers.edu/",
 #"https://www.masongross.rutgers.edu/",
@@ -77,7 +77,7 @@ urls = [
 #"https://sdm.rutgers.edu/",
 #"https://shp.rutgers.edu/",
 #"https://nursing.rutgers.edu/",
-"https://sph.rutgers.edu/"
+#"https://sph.rutgers.edu/"
 ]
 
 # Scrape links in all the URLs
